@@ -16,10 +16,10 @@ Two minimal charts for testing Helm deployments. Both run the official `httpd:2.
    git rm -rf .
    git commit --allow-empty -m "init gh-pages"
    git push origin gh-pages
-   git checkout main
+   git checkout master
    ```
 3. In **Settings → Pages**, set the source to the `gh-pages` branch.
-4. Push any change under `charts/` to `main`. The workflow packages each chart, creates a GitHub Release per chart version, and writes `index.yaml` to `gh-pages`.
+4. Push any change under `charts/` to `master`. The workflow packages each chart, creates a GitHub Release per chart version, and writes `index.yaml` to `gh-pages`.
 
 Bump `version` in a chart's `Chart.yaml` whenever you change it, or the release step will skip it.
 
