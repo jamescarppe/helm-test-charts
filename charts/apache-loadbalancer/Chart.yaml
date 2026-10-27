@@ -1,0 +1,7 @@
+apiVersion: v2
+name: apache-loadbalancer
+description: Apache httpd deployment exposed through a LoadBalancer Service
+type: application
+version: 0.1.0
+appVersion: "2.4"
+keywords: [apache, httpd, test]

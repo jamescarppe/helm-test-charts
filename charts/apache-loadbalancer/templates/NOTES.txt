@@ -1,0 +1,9 @@
+{{ .Chart.Name }} deployed as release "{{ .Release.Name }}" in namespace "{{ .Release.Namespace }}".
+
+A LoadBalancer Service has been requested. Check whether an external address was assigned:
+
+  kubectl get svc {{ include "chart.fullname" . }} -n {{ .Release.Namespace }} -w
+
+If EXTERNAL-IP stays <pending>, the cluster has no load balancer provider
+(e.g. bare metal without MetalLB, or kind/minikube without a tunnel).
+The Deployment itself will still be running.

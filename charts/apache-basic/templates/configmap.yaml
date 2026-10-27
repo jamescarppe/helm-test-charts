@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "chart.fullname" . }}-html
+  labels:
+    {{- include "chart.labels" . | nindent 4 }}
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>{{ .Chart.Name }}</title></head>
+    <body style="font-family: sans-serif; margin: 3rem;">
+      <h1>{{ .Values.message }}</h1>
+      <p>Chart: {{ .Chart.Name }} {{ .Chart.Version }}</p>
+      <p>Release: {{ .Release.Name }} in namespace {{ .Release.Namespace }}</p>
+      <p>Service type: {{ .Values.service.type }}</p>
+    </body>
+    </html>

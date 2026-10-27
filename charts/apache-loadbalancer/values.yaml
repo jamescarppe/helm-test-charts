@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: httpd
+  tag: "2.4"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  # Optional: request a specific external IP (provider must support it)
+  loadBalancerIP: ""
+  # Optional: restrict which client CIDRs can reach the load balancer
+  loadBalancerSourceRanges: []
+  # Optional: provider-specific annotations (e.g. MetalLB, AWS, Azure)
+  annotations: {}
+
+# Text shown on the served index page
+message: "Deployed successfully with Helm."
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi

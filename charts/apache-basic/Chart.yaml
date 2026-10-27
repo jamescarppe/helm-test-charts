@@ -1,0 +1,7 @@
+apiVersion: v2
+name: apache-basic
+description: Minimal Apache httpd deployment for testing Helm installs
+type: application
+version: 0.1.0
+appVersion: "2.4"
+keywords: [apache, httpd, test]
