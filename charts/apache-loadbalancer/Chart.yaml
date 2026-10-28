@@ -1,6 +1,7 @@
 apiVersion: v2
 name: apache-loadbalancer
 description: Apache httpd deployment exposed through a LoadBalancer Service
+home: https://github.com/jamescarppe/helm-test-charts
 type: application
 version: 0.1.0
 appVersion: "2.4"

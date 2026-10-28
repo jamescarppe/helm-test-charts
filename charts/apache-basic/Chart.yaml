@@ -1,6 +1,7 @@
 apiVersion: v2
 name: apache-basic
 description: Minimal Apache httpd deployment for testing Helm installs
+home: https://github.com/jamescarppe/helm-test-charts
 type: application
 version: 0.1.0
 appVersion: "2.4"
