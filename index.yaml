@@ -1,0 +1,35 @@
+apiVersion: v1
+entries:
+  apache-basic:
+  - apiVersion: v2
+    appVersion: "2.4"
+    created: "2026-10-28T00:09:29.704600578Z"
+    description: Minimal Apache httpd deployment for testing Helm installs
+    digest: 28d53642ab3a9a1262f18c1bfef4a7b38cdef7f6b29715b1b8e6cd25d2a26ae9
+    home: https://github.com/jamescarppe/helm-test-charts
+    keywords:
+    - apache
+    - httpd
+    - test
+    name: apache-basic
+    type: application
+    urls:
+    - https://github.com/jamescarppe/helm-test-charts/releases/download/apache-basic-0.1.0/apache-basic-0.1.0.tgz
+    version: 0.1.0
+  apache-loadbalancer:
+  - apiVersion: v2
+    appVersion: "2.4"
+    created: "2026-10-28T00:09:29.811145514Z"
+    description: Apache httpd deployment exposed through a LoadBalancer Service
+    digest: 669027b7374629111394a01b2fe6da11d65b703f60c03a84bd66be406f2db3d5
+    home: https://github.com/jamescarppe/helm-test-charts
+    keywords:
+    - apache
+    - httpd
+    - test
+    name: apache-loadbalancer
+    type: application
+    urls:
+    - https://github.com/jamescarppe/helm-test-charts/releases/download/apache-loadbalancer-0.1.0/apache-loadbalancer-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-10-28T00:09:29.811158448Z"
